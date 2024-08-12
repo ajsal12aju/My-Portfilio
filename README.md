@@ -7,6 +7,3 @@ My website portfolio
 
 ### Mobile View
 ![alt text](https://github.com/alisolanki/Portfolio/blob/master/Portfolio_mobile.PNG)
-
-## Author
-* Mohd. Ali Solanki (https://youtube.com/AliSolanki)
