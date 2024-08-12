@@ -10,7 +10,7 @@
    ================================================== -->
    <meta charset="utf-8">
 	<title>Ajsal | Portfolio Website | Developer</title>
-	<meta name="description" content="Mohammed Ajsal Vp is a Developer cum YouTuber and is a B.Tech student at KJ Somaiya College Of Engineering">  
+	<meta name="description" content="Mohammed Ajsal Vp is a Developer ">  
 	<meta name="author" content="Mohd. Mohammed Ajsal Vp">
 
     <meta name="keywords" content="ajsal, aju, Mohammed Ajsal Vp, mumbai, developer, web developer, android developer"/>
@@ -28,8 +28,8 @@
     <meta name="copyright" content="Mohammed Ajsal Vp">
     <meta name="reply-to" content="ajsal12aju@gmail.com">
     <meta name="owner" content="Mohammed Ajsal Vp">
-    <meta name="url" content="https://alisolanki.github.io/Portfolio/">
-    <meta name="identifier-URL" content="https://alisolanki.github.io/Portfolio/">
+    <meta name="url" content="https://github.com/ajsal12aju">
+    <meta name="identifier-URL" content="https://github.com/ajsal12aju">
     <meta name="directory" content="submission">
     <meta name="category" content="Business | Portfolio">
     <meta name="coverage" content="Worldwide">
@@ -60,6 +60,35 @@
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'UA-153937526-1');
+    </script>
+
+     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("iNgQYGGF46FH5uF5e");
+        })();
+
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('contactForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                var templateParams = {
+                    name: document.getElementById('contactName').value,
+                    reply_to: document.getElementById('contactEmail').value,
+                    subject: document.getElementById('contactSubject').value,
+                    message: document.getElementById('contactMessage').value
+                };
+emailjs.send("service_quz10os","template_68vzrh8",templateParams)
+              
+                    .then(function(response) {
+                        console.log('SUCCESS!', response.status, response.text);
+                        alert("Email sent successfully!");
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                        alert("Failed to send email.");
+                    });
+            });
+        });
     </script>
 
    <!-- favicons ================================================== -->
@@ -107,7 +136,7 @@
    			<div class="col-twelve">
 
 				   <h5>Hello, World.</h5>
-					<h1>I<span style="color: #CC005F;">'</span>m Mohammed Ajsal Vp<span style="color: #CC005F;">.</span></h1>
+					<h1>I<span style="color: #CC005F;">'</span>m Mohammed Ajsal</h1>
 
                     <p class="intro-position">
                         <span>Frontend Developer</span>
@@ -123,9 +152,9 @@
    	</div> <!-- /intro-content --> 
 
         <ul class="intro-social">
-            <li><a href="https://www.linkedin.com/in/ali-solanki-2a1227192/"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="https://www.instagram.com/alisolankii"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="https://github.com/alisolanki"><i class="fa fa-github"></i></a></li>
+       <li><a href="https://www.linkedin.com/in/mohammed-ajsal-vp-946aab273" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://www.instagram.com/ajsal12" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://github.com/ajsal12aju" target="_blank"><i class="fa fa-github"></i></a></li>
             
         </ul> <!-- /intro-social -->      	
 
@@ -376,7 +405,7 @@ Website designed for construction professionals                                 
 		<div class="bgrid folio-item">
 	               <div class="item-wrap">
 	               	<img src="images/portfolio/bgCard/onlineShop.png" alt="Show World Film Directory Application">
-	                  <a href="#modal-07" class="overlay">             		                  
+	                  <a href="#modal-05" class="overlay">             		                  
 	                     <div class="folio-item-table">
 	                     	<div class="folio-item-cell">
 	                     		<h3 class="folio-title">Online Shoppie</h3>	     					    
@@ -391,7 +420,7 @@ Website designed for construction professionals                                 
            <div class="bgrid folio-item">
 	               <div class="item-wrap">
 	               	<img src="images/portfolio/bgCard/vegStore.png" alt="Portfolio">
-	                  <a href="#modal-08" class="overlay">             		                  
+	                  <a href="#modal-04" class="overlay">             		                  
 	                     <div class="folio-item-table">
 	                     	<div class="folio-item-cell">
 	                     		<h3 class="folio-title">Veg Store</h3>	     					    
@@ -420,7 +449,7 @@ Website designed for construction professionals                                 
 					      <div class="categories">Static Website</div>			               
 					   </div>
 			         <div class="link-box">
-			            <a href="https://dreamprojects.netlify.app">View</a>
+			            <a href="https://dreamprojects.netlify.app" target="_blank">View</a>
 					      <a href="#" class="popup-modal-dismiss">Close</a>
 			         </div>
                 </div> <!-- /modal-08 -->
@@ -436,7 +465,7 @@ Website designed for construction professionals                                 
 					      <div class="categories">React Dashboard With MUI </div>			               
 					   </div>
 			         <div class="link-box">
-			            <a href="https://admin-usefull-dashboard.netlify.app">View</a>
+			            <a href="https://admin-usefull-dashboard.netlify.app" target="_blank">View</a>
 					      <a href="#" class="popup-modal-dismiss">Close</a>
 			         </div>
                 </div> <!-- /modal-07 -->
@@ -452,29 +481,42 @@ Website designed for construction professionals                                 
 					      <div class="categories">Animated Portfolio </div>			               
 					   </div>
 			         <div class="link-box">
-			            <a href="https://mohammed-ajsal-portfolio.netlify.app">View</a>
+			            <a href="https://mohammed-ajsal-portfolio.netlify.app" target="_blank">View</a>
 					      <a href="#" class="popup-modal-dismiss">Close</a>
 			         </div>
                 </div>
 
                  <div id="modal-05" class="popup-modal slider mfp-hide">	
-
 				     	<div class="media">
-				     		<img src="images/portfolio/bgCard/reactportfolio.png" alt="react" />
+				     		<img src="images/portfolio/bgCard/onlineShop.png" alt="react" />
 				     	</div>      	
 
 					   <div class="description-box">
-					      <h4>On</h4>		      
-					      <p> Animated React portfolio showcasing projects with smooth transitions.</p>
-					      <div class="categories">Animated Portfolio </div>			               
+					      <h4>Online Shoppiee</h4>		      
+					      <p> An online shopping platform for a seamless and user-friendly shopping experience</p>
+					      <div class="categories">Basic functionality implemented using JavaScript.</div>			               
 					   </div>
 			         <div class="link-box">
-			            <a href="https://mohammed-ajsal-portfolio.netlify.app">View</a>
+			            <a href="https://online-shoppiee.netlify.app" target="_blank">View</a>
 					      <a href="#" class="popup-modal-dismiss">Close</a>
 			         </div>
                 </div>
 
-             
+                <div id="modal-04" class="popup-modal slider mfp-hide">	
+				     	<div class="media">
+				     		<img src="images/portfolio/bgCard/vegStore.png" alt="react" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Veg Store</h4>		      
+					      <p> Static Veg Store </p>
+					      <div class="categories">Static Website using HTML CSS</div>			               
+					   </div>
+			         <div class="link-box">
+			            <a href="https://vegan-shopie.netlify.app" target="_blank">View</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>
+                </div>
 			 <!-- /modal-05 -->
 
 		
@@ -630,8 +672,8 @@ Website designed for construction professionals                                 
    			<h5>Where to find me</h5>
 
    			<p>
-            Andheri West, Mumbai<br>
-            400058 India
+            Malappuram Kerala, India<br>
+            676301 India
             </p>
 
    		</div>
@@ -645,7 +687,7 @@ Website designed for construction professionals                                 
    			<h5>Email Me At</h5>
 
    			<p>ajsal12aju@gmail.com<br>
-			   mohammed.solanki@somaiya.edu			     
+			   			     
 			</p>
 
    		</div>
@@ -658,7 +700,7 @@ Website designed for construction professionals                                 
 
    			<h5>Call Me At</h5>
 
-			<p>Phone: Telegram (<a href="https://t.me/alisolanki">alisolanki</a>)
+			<p>Phone: 9645588095
 			</p>
    		</div>
    		
@@ -675,13 +717,10 @@ Website designed for construction professionals                                 
      		<div class="col-six tab-full pull-right social"
 
                 <ul class="footer-social">
-                    <li><a href="https://www.linkedin.com/in/ali-solanki-2a1227192/"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="https://www.instagram.com/alisolankii"><i class="fa fa-instagram"></i></a></li>
-                    <li><a href="https://github.com/alisolanki"><i class="fa fa-github"></i></a></li>
-                    <li><a href="https://www.youtube.com/channel/UCgzz4Kd1YpzxJOkrhf5U_7A/"><i class="fa fa-youtube"></i></a></li>
-                    <li><a href="https://www.codechef.com/users/alisolanki"><i class="fa fa-code"></i></a></li>
-            	    <li><a href="https://play.google.com/store/apps/dev?id=6991863212111988524"><i class="fa fa-play"></i></a></li>
-	    	    <li><a href="https://apps.apple.com/gh/developer/ali-solanki/id1556898924"><i class="fa fa-apple"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/mohammed-ajsal-vp-946aab273" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://www.instagram.com/ajsal12" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://github.com/ajsal12aju" target="_blank"><i class="fa fa-github"></i></a></li>
+
                 </ul> 
 	      		
 	      </div>
@@ -689,7 +728,7 @@ Website designed for construction professionals                                 
       	<div class="col-six tab-full">
 	      	<div class="copyright">
 		        	<span>© Copyright 2021 </span> 
-		        	<span>Design by <a href="https://www.linkedin.com/in/ali-solanki-2a1227192/">Mohd. Mohammed Ajsal Vp</a></span>	         	
+		        	<span>Design by <a href="">Mohammed Ajsal Vp</a></span>	         	
 		         </div>		                  
 	      	</div>
 
